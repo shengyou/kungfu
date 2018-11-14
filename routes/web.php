@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect()->route('dashboard.index');
-});
+Route::get('/', 'HomeController@index');
 
 Route::middleware('auth')->group(function () {
 

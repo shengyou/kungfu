@@ -10,7 +10,8 @@ parameters:
       tab_width: ~
       whitelist_patterns: []
       encoding: ~
-      ignore_patterns: []
+      ignore_patterns:
+        - "routes/*.php"
       sniffs: []
       triggered_by: [php]
     phpunit:
