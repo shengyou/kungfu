@@ -59,6 +59,12 @@
         ],
         "fix-style": [
             "phpcbf --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 app"
+        ],
+        "fixer-check": [
+            "php-cs-fixer fix app --rules=@PSR2 --dry-run --using-cache=no --verbose"
+        ],
+        "fixer-fix": [
+            "php-cs-fixer fix app --rules=@PSR2 --using-cache=no --verbose"
         ]
     },
     "config": {
