@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2edf92ccc7199a77d8cc4e9046f52760",
+    "content-hash": "44d08e0e8b3f5ea0795aaafaf3a5eaf3",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1290,6 +1290,49 @@
                 "storage"
             ],
             "time": "2018-09-14T15:30:29+00:00"
+        },
+        {
+            "name": "micheh/teamcity-clover",
+            "version": "0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/micheh/teamcity-clover.git",
+                "reference": "7fcd92fcfbabacc5cffa156de2caea5a6ca32989"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/micheh/teamcity-clover/zipball/7fcd92fcfbabacc5cffa156de2caea5a6ca32989",
+                "reference": "7fcd92fcfbabacc5cffa156de2caea5a6ca32989",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "bin": [
+                "teamcity-clover"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Hunziker",
+                    "email": "info@michelhunziker.com",
+                    "homepage": "https://www.michelhunziker.com"
+                }
+            ],
+            "description": "Parse the clover.xml and report the code coverage and CRAP indices to TeamCity",
+            "keywords": [
+                "clover",
+                "clover.xml",
+                "code coverage",
+                "coverage",
+                "phpunit",
+                "teamcity"
+            ],
+            "time": "2018-07-22T13:51:14+00:00"
         },
         {
             "name": "monolog/monolog",
