@@ -1,4 +1,20 @@
 parameters:
-    git_dir: .
-    bin_dir: vendor/bin
-    tasks: {  }
+  git_dir: .
+  bin_dir: vendor/bin
+  tasks:
+    phpcs:
+      standard: PSR2
+      severity: ~
+      error_severity: ~
+      warning_severity: ~
+      tab_width: ~
+      whitelist_patterns: []
+      encoding: ~
+      ignore_patterns: []
+      sniffs: []
+      triggered_by: [php]
+    phpunit:
+      config_file: ~
+      testsuite: ~
+      group: []
+      always_execute: false
