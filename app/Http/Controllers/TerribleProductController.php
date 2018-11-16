@@ -8,16 +8,20 @@ use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
-class TerribleProductController extends Controller{
-
-    private function doSomething($request){
+class TerribleProductController extends Controller
+{
+    
+    private function doSomething($request)
+    {
         $attributes=[]
         ;
         foreach ($request->all() as $key => $value) {
             $attributes[$key] = $value;
-        }return$attributes;}
+        }return$attributes;
+    }
 
-    public function index(){
+    public function index()
+    {
         $products = $this->product->orderBy('created_at', 'DESC')->get();
         $data=['products'=>$products];
         return view('products.index', $data);
@@ -31,21 +35,19 @@ class TerribleProductController extends Controller{
     }
     protected $product;
 
-    public function create(Category $category){
+    public function create(Category $category)
+    {
         $categories =$category->all();
-$data = ['categories'=> $categories];
+        $data = ['categories'=> $categories];
         return view('products.create', $data);
-
-
-
     }
 
 
 
-    public function store(ProductRequest $request) {
-        $attributes = $this->doSomething($request);$this->product->create($attributes);
-        return redirect()->route('products.index');}
-
-
-
+    public function store(ProductRequest $request)
+    {
+        $attributes = $this->doSomething($request);
+        $this->product->create($attributes);
+        return redirect()->route('products.index');
+    }
 }
